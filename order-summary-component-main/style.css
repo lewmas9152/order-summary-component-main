@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+
+}
+body{
+ background-color:hsl(225, 100%, 94%); 
+ color: hsl(224, 23%, 55%); 
+ font-family: 'Red Hat Display', sans-serif;
+ font-size:16px ; 
+ height: 100vh;
+ width:100vw;
+ display: grid;
+}
+.order_card{
+    background-color:white ;
+    margin:auto;
+    max-width: 350px;
+    border-radius:1rem;
+    overflow: hidden;
+    
+}
+.order_content{
+    padding: 2rem;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+.order_header{
+    color: hsl(223, 47%, 23%);
+}
+.order_price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background-color:hsl(225, 100%, 98%) ;
+    padding: 0 1rem;
+    margin: 1rem 0  ;
+    border-radius: 10px;
+}
+.price_tag{
+    max-width: 10ch;
+}
+.accent{
+    font-weight:900;
+    color: hsl(223, 47%, 23%);
+}
+.change{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: underline;
+
+}
+.change:hover{
+    text-decoration:none ;
+    cursor: pointer;
+}
+
+.button{
+    background-color:hsl(245, 75%, 52%)  ;
+    padding: 1rem;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    transition: all 450ms ease-out;
+}
+
+.button:hover{
+    background-color:hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+.cancel{
+    transition: all 450ms ease-in;
+}
+.cancel:hover{
+    color :hsl(223, 47%, 23%);
+    cursor: pointer;
+}
